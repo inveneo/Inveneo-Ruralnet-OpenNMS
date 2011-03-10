@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model-import last-import="2011-03-09T17:47:30.204-08:00" foreign-source="ubiquiti" date-stamp="2011-03-09T17:47:29.535-08:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+    <node node-label="BOUTL-OBLEO" foreign-id="1299721595572" building="ubiquiti">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.2" descr="">
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="ICMP"/>
+        </interface>
+    </node>
+</model-import>

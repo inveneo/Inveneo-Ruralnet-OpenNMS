@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <datacollection-config rrdRepository="/var/lib/opennms/rrd/snmp/">
-  <snmp-collection name="default" snmpStorageFlag="select">
+  <snmp-collection name="default" snmpStorageFlag="all">
     <rrd step="300">
       <rra>RRA:AVERAGE:0.5:1:2016</rra>
       <rra>RRA:AVERAGE:0.5:12:1488</rra>
@@ -577,7 +577,112 @@
       <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
     </resourceType>
 
+    <!-- BEGIN Inveneo resource type additions -->
+    <!-- 802.11 Resource Types -->
+    <resourceType name="dot11smt" label="Station Management Data (802dot11)" resourceLabel="802.11 station managment (${index})">
+       <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+       <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="dot11mac" label="MAC Operation Data (802dot11)" resourceLabel="802.11 mac (${index})">
+       <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+       <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="dot11macCount" label="MAC Counter Data (802dot11)" resourceLabel="802.11 mac counters (${index})">
+       <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+       <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="dot11res" label="Resource Data (802dot11)" resourceLabel="802.11 resource data (${index})">
+       <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+       <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
+    </resourceType>
+    <resourceType name="dot11phy" label="Physical Layer Data (802dot11)" resourceLabel="802.11 physical data (${index})">
+       <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+       <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
+    </resourceType>
+
+
+    <!-- LMSensors Resource Types -->
+
+   <resourceType name="lmTempIndex" label="Temp Table Index (lmSensors MIB)" resourceLabel="${lms-tempdevice} (index ${index})">
+     <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+     <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
+   </resourceType>
+
+   <resourceType name="lmFanIndex" label="Fan Table Index (lmSensors MIB)" resourceLabel="${lms-fandevice} (index ${index})">
+     <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+     <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
+   </resourceType>
+
+   <resourceType name="lmVoltIndex" label="Volt Table Index (lmSensors MIB)" resourceLabel="${lms-voltdevice} (index ${index})">
+     <persistenceSelectorStrategy class="org.opennms.netmgt.collectd.PersistAllSelectorStrategy"/>
+     <storageStrategy class="org.opennms.netmgt.dao.support.IndexStorageStrategy"/>
+   </resourceType>
+
+
+
+    <!-- END Inveneo resource type additions -->
+
+
+      <!-- BEGIN group definitions -->
     <groups>
+
+      <!-- BEGIN Inveneo object group additions -->
+      <!-- 802dot11 MIBs -->
+      <group name="dot11smt" ifType="all">
+        <mibObj oid=".1.2.840.10036.1.1.1.1" instance="dot11smt" alias="dot11StationID" type="String"/>
+        <mibObj oid=".1.2.840.10036.1.1.1.7" instance="dot11smt" alias="dot1PrivOpt" type="String"/>
+        <mibObj oid=".1.2.840.10036.1.1.1.8" instance="dot11smt" alias="dot11PMgtMode" type="String"/>
+        <mibObj oid=".1.2.840.10036.1.1.1.9" instance="dot11smt" alias="dot11TgtSSID" type="String"/>
+        <mibObj oid=".1.2.840.10036.1.1.1.10" instance="dot11smt" alias="dot11Mode" type="String"/>
+        <mibObj oid=".1.2.840.10036.1.1.1.11" instance="dot11smt" alias="dot11RateSet" type="String"/>
+      </group>
+      <group name="dot11mac" ifType="all">
+        <mibObj oid=".1.2.840.10036.2.1.1.1" instance="dot11mac" alias="dot11MACAdr" type="String"/>
+        <mibObj oid=".1.2.840.10036.2.1.1.2" instance="dot11mac" alias="dot11RTSThrsh" type="Integer32"/>
+        <mibObj oid=".1.2.840.10036.2.1.1.5" instance="dot11mac" alias="dot11FragThr" type="Integer32"/>
+        <mibObj oid=".1.2.840.10036.2.1.1.9" instance="dot11mac" alias="dot11ProdID" type="String"/>
+      </group>
+      <group name="dot11macCount" ifType="all">
+        <mibObj oid=".1.2.840.10036.2.2.1.3" instance="dot11macCount" alias="dot11FldCt" type="Counter32"/>
+        <mibObj oid=".1.2.840.10036.2.2.1.4" instance="dot11macCount" alias="dot11RtryCt" type="Counter32"/>
+        <mibObj oid=".1.2.840.10036.2.2.1.14" instance="dot11macCount" alias="dot11UndcrptCt" type="Counter32"/>
+      </group>
+      <group name="dot11res" ifType="all">
+        <mibObj oid=".1.2.840.10036.3.1.2.1.2" instance="dot11res" alias="dot11Manuf" type="String"/>
+        <mibObj oid=".1.2.840.10036.3.1.2.1.3" instance="dot11res" alias="dot11Prod" type="String"/>
+        <mibObj oid=".1.2.840.10036.3.1.2.1.4" instance="dot11res" alias="dot11FWVers" type="String"/>
+      </group>
+      <group name="dot11phy" ifType="all">
+        <mibObj oid=".1.2.840.10036.4.5.1.1" instance="dot11phy" alias="dot11Channel" type="Integer32"/>
+      </group>
+
+      <!-- Frogfoot Resources MIBs -->
+      <group name="FrogfootRes" ifType="ignore">
+        <mibObj oid=".1.3.6.1.4.1.10002.1.1.1.1.1" instance="0" alias="frogMemTot" type="Gauge32"/>
+        <mibObj oid=".1.3.6.1.4.1.10002.1.1.1.1.2" instance="0" alias="frogMemFree" type="Gauge32"/>
+        <mibObj oid=".1.3.6.1.4.1.10002.1.1.1.1.3" instance="0" alias="frogMemBuffer" type="Gauge32"/>
+        <mibObj oid=".1.3.6.1.4.1.10002.1.1.1.1.4" instance="0" alias="frogMemCache" type="Gauge32"/>
+        <mibObj oid=".1.3.6.1.4.1.10002.1.1.1.2.1" instance="0" alias="frogSwapTot" type="Gauge32"/>
+        <mibObj oid=".1.3.6.1.4.1.10002.1.1.1.2.2" instance="0" alias="frogSwapFree" type="Gauge32"/>
+        <mibObj oid=".1.3.6.1.4.1.10002.1.1.1.4.1" instance="0" alias="frogLoadNum" type="Integer32"/>
+   </group>
+
+      <!-- LMSensors MIBs -->
+     <group name="lmsensors-temp" ifType="all">
+       <mibObj oid=".1.3.6.1.4.1.2021.13.16.2.1.2" instance="lmTempIndex" alias="lms-tempdevice" type="string"/>
+       <mibObj oid=".1.3.6.1.4.1.2021.13.16.2.1.3" instance="lmTempIndex" alias="lms-temp" type="gauge32"/>
+     </group>
+     <group name="lmsensors-fan" ifType="all">
+       <mibObj oid=".1.3.6.1.4.1.2021.13.16.3.1.2" instance="lmFanIndex" alias="lms-fandevice" type="string"/>
+       <mibObj oid=".1.3.6.1.4.1.2021.13.16.3.1.3" instance="lmFanIndex" alias="lms-fan" type="gauge32"/>
+     </group>
+     <group name="lmsensors-volt" ifType="all">
+       <mibObj oid=".1.3.6.1.4.1.2021.13.16.4.1.2" instance="lmVoltIndex" alias="lms-voltdevice" type="string"/>
+       <mibObj oid=".1.3.6.1.4.1.2021.13.16.4.1.3" instance="lmVoltIndex" alias="lms-volt" type="gauge32"/>
+     </group>
+      <!-- END Inveneo object group additions -->
+
+
       <group name="cisco-frame-relay" ifType="all">
         <mibObj oid=".1.3.6.1.4.1.9.9.49.1.2.2.1.1" instance="frCircuitIfIndex" alias="frIfName"     type="string" />
         <mibObj oid=".1.3.6.1.4.1.9.9.49.1.2.2.1.2" instance="frCircuitIfIndex" alias="frIfType"     type="string" />
@@ -4086,6 +4191,15 @@
           <includeGroup>mtxrWlStatIndex</includeGroup>
           <includeGroup>mtxrWlRtabAddr</includeGroup>
           <includeGroup>mtxrHealth</includeGroup>
+          <includeGroup>mib2-interfaces</includeGroup>
+          <includeGroup>mib2-X-interfaces</includeGroup>
+          <includeGroup>mib2-host-resources-storage</includeGroup>
+          <includeGroup>mib2-host-resources-system</includeGroup>
+          <includeGroup>mib2-host-resources-memory</includeGroup>
+          <includeGroup>mib2-host-resources-processor</includeGroup>
+          <includeGroup>mib2-tcp</includeGroup>
+          <includeGroup>mib2-icmp</includeGroup>
+          <includeGroup>mib2-powerethernet</includeGroup>
         </collect>
       </systemDef>
 
@@ -4374,6 +4488,26 @@
            <includeGroup>xups</includeGroup>
         </collect>
        </systemDef>
+
+
+    <!-- Inveneo Ubiquiti radios -->
+      <systemDef name="Ubiquiti Radio">
+        <sysoidMask>.1.3.6.1.4.1.10002.</sysoidMask>
+        <collect>
+          <includeGroup>mib2-interfaces</includeGroup>
+          <!--<includeGroup>mib2-system-minimal</includeGroup> -->
+          <includeGroup>mtxrWlStatIndex</includeGroup>
+          <!--includeGroup>mtxrWlRtabAddr</includeGroup -->
+          <includeGroup>dot11smt</includeGroup>
+          <!-- This doesnt supply anything helpful
+          <includeGroup>dot11mac</includeGroup> -->
+          <includeGroup>dot11macCount</includeGroup>
+          <includeGroup>dot11res</includeGroup>
+          <includeGroup>dot11phy</includeGroup>
+          <includeGroup>FrogfootRes</includeGroup>
+        </collect>
+      </systemDef>
+
 
     </systems>
   </snmp-collection>
