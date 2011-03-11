@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <snmp-config xmlns="http://xmlns.opennms.org/xsd/config/snmp" retry="1"
-    timeout="1800" read-community="1nvene0" version="v1">
-    <definition read-community="1nvene0" version="v1">
-        <specific xmlns="">10.0.2.20</specific>
-    </definition>
+    timeout="6000" read-community="1nvene0" version="v1" max-vars-per-pdu="10">
 </snmp-config>

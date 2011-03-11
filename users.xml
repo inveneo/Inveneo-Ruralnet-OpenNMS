@@ -1,18 +1,25 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <userinfo xmlns="http://xmlns.opennms.org/xsd/users">
-  <header>
-    <rev>.9</rev>
-    <created>Wednesday, February 6, 2002 10:10:00 AM EST</created>
-    <mstation>master.nmanage.com</mstation>
-  </header>
-  <users>
-    <user>
-      <user-id>admin</user-id>
-      <full-name>Administrator</full-name>
-      <user-comments>
-        Default administrator, do not delete
-      </user-comments>
-      <password>21232F297A57A5A743894A0E4A801FC3</password>
-    </user>
-  </users>
+    <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
+        <rev xmlns="">.9</rev>
+        <created xmlns="">Friday, March 11, 2011 3:14:30 AM GMT</created>
+        <mstation xmlns="">master.nmanage.com</mstation>
+    </ns1:header>
+    <users>
+        <user read-only="false">
+            <user-id xmlns="">admin</user-id>
+            <full-name xmlns="">Administrator</full-name>
+            <user-comments xmlns="">Default administrator, do not delete</user-comments>
+            <password xmlns="">040C91FB27A19576A9E3C4AE5DD62C7B</password>
+            <contact type="email" info=""/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info=""/>
+            <contact type="homePhone" info=""/>
+        </user>
+    </users>
 </userinfo>

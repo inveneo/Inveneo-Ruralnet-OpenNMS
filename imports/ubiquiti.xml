@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-03-09T17:47:30.204-08:00" foreign-source="ubiquiti" date-stamp="2011-03-09T17:47:29.535-08:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
-    <node node-label="BOUTL-OBLEO" foreign-id="1299721595572" building="ubiquiti">
+<model-import last-import="2011-03-10T19:04:48.857-08:00" foreign-source="ubiquiti" date-stamp="2011-03-10T19:04:48.325-08:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+    <node node-label="HILRE-HINCH" foreign-id="1299812393220" building="HILRE">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.48" descr=""/>
+        <category name="Backbone"/>
+        <category name="Ubiquiti"/>
+    </node>
+    <node node-label="HILRE-PIGNO" foreign-id="1299812279283" building="HILRE">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.34" descr=""/>
+        <category name="Backbone"/>
+        <category name="Ubiquiti"/>
+    </node>
+    <node node-label="HILRE-MASDE" foreign-id="1299812218673" building="HILRE">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.26" descr=""/>
+        <category name="Backbone"/>
+        <category name="Ubiquiti"/>
+    </node>
+    <node node-label="HILRE-OBLEO" foreign-id="1299812182560" building="HILRE">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.11" descr=""/>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+    </node>
+    <node node-label="OBLEO-BELVU" foreign-id="1299812113648" building="OBLEO">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.42" descr=""/>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+    </node>
+    <node node-label="OBLEO-HILRE" foreign-id="1299810850213" building="OBLEO">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.10" descr=""/>
+        <category name="Backbone"/>
+        <category name="Ubiquiti"/>
+    </node>
+    <node node-label="BOUTL-OBLEO" foreign-id="1299721595572" building="BOUTL">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.2" descr="">
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="ICMP"/>
         </interface>
+        <category name="Backbone"/>
+        <category name="Ubiquiti"/>
+    </node>
+    <node node-label="OBLEO-JACML" foreign-id="1" building="OBLEO">
+        <interface snmp-primary="P" ip-addr="10.0.64.18" descr=""/>
+        <category name="Backbone"/>
+        <category name="Ubiquiti"/>
     </node>
 </model-import>
