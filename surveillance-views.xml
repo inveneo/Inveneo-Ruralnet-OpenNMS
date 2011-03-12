@@ -7,25 +7,16 @@
   <views >
     <view name="default" refresh-seconds="300" >
       <rows>
-        <row-def label="Routers" >
-          <category name="Routers"/>
+        <row-def label="Mikrotik" >
+          <category name="Mikrotik"/>
         </row-def>
-        <row-def label="Switches" >
-          <category name="Switches" />
-        </row-def>
-        <row-def label="Servers" >
-          <category name="Servers" />
+        <row-def label="Ubiquiti" >
+          <category name="Ubiquiti" />
         </row-def>
       </rows>
       <columns>
-        <column-def label="PROD" >
-          <category name="Production" />
-        </column-def>
-        <column-def label="TEST" >
-          <category name="Test" />
-        </column-def>
-        <column-def label="DEV" >
-          <category name="Development" />
+        <column-def label="Backbone" >
+          <category name="Backbone" />
         </column-def>
       </columns>
     </view>
