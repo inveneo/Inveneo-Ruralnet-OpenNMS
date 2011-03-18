@@ -224,7 +224,10 @@
 
   <package name="strafer">
     <filter>IPADDR != '0.0.0.0'</filter>
-    <include-range begin="10.1.1.1" end="10.1.1.10" />
+    <include-range begin="200.80.112.17" end="200.80.112.17" />
+    <include-range begin="10.0.2.20" end="10.0.2.20" />
+    <include-range begin="10.0.64.12" end="10.0.64.12" />
+    <include-range begin="10.0.64.4" end="10.0.64.4" />
     <rrd step="300">
       <rra>RRA:AVERAGE:0.5:1:2016</rra>
       <rra>RRA:AVERAGE:0.5:12:1488</rra>

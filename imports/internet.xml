@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model-import last-import="2011-03-18T18:25:27.012-05:00" foreign-source="internet" date-stamp="2011-03-18T18:25:26.385-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+    <node node-label="Multilink Ping Target" foreign-id="1300490227513" building="internet">
+        <interface status="1" snmp-primary="P" ip-addr="200.80.112.17" descr="">
+            <monitored-service service-name="StrafePing"/>
+            <monitored-service service-name="ICMP"/>
+        </interface>
+    </node>
+    <node node-label="Multilink Cisco " foreign-id="1300490069511" building="BOUTL">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.4.1" descr="">
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="ICMP"/>
+        </interface>
+    </node>
+    <node node-label="Multilink Gateway" foreign-id="1300489893359" building="BOUTL">
+        <interface status="1" snmp-primary="P" ip-addr="200.80.112.121" descr="">
+            <monitored-service service-name="ICMP"/>
+        </interface>
+    </node>
+</model-import>
