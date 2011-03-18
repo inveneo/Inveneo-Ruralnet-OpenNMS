@@ -206,4 +206,18 @@
             <switch>-tm</switch>
         </argument>
     </command>
+
+    <!-- Use this notificationCommand to send an SMS with an HTTP request to frontlineSMS -->
+    <command binary="true">
+        <name>frontlinePost</name>
+        <execute>/opt/inveneo/sbin/sendsms</execute>
+        <comment>SMS via frontline</comment>
+        <argument streamed="false">
+            <switch>-mphone</switch>
+        </argument>
+        <argument streamed="false">
+            <switch>-tm</switch>
+        </argument>
+    </command>
+
 </notification-commands>

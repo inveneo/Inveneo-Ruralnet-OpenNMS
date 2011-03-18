@@ -2,10 +2,25 @@
 <userinfo xmlns="http://xmlns.opennms.org/xsd/users">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">.9</rev>
-        <created xmlns="">Friday, March 11, 2011 3:14:30 AM GMT</created>
+        <created xmlns="">Friday, March 18, 2011 10:19:33 PM GMT</created>
         <mstation xmlns="">master.nmanage.com</mstation>
     </ns1:header>
     <users>
+        <user read-only="false">
+            <user-id xmlns="">andris</user-id>
+            <full-name xmlns="">Andris Bjornson</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">1A85A446D98EEB97642E2D635E5F78A0</password>
+            <contact type="email" info="andris@inveneo.org"/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info="+14152057802"/>
+            <contact type="homePhone" info=""/>
+        </user>
         <user read-only="false">
             <user-id xmlns="">admin</user-id>
             <full-name xmlns="">Administrator</full-name>

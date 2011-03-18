@@ -1,14 +1,29 @@
-<?xml version="1.0"?>
-<destinationPaths>
-    <header>
-        <rev>1.2</rev>
-        <created>Wednesday, February 6, 2002 10:10:00 AM EST</created>
-        <mstation>localhost</mstation>
-    </header>
-    <path name="Email-Admin">
-        <target>
-                <name>Admin</name>
-                <command>javaEmail</command>
+<?xml version="1.0" encoding="UTF-8"?>
+<destinationPaths xmlns="http://xmlns.opennms.org/xsd/destinationPaths">
+    <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
+        <rev xmlns="">1.2</rev>
+        <created xmlns="">Friday, March 18, 2011 7:53:50 PM GMT</created>
+        <mstation xmlns="">localhost</mstation>
+    </ns1:header>
+    <path name="BackboneNotification" initial-delay="1m">
+        <target interval="0m">
+            <name xmlns="">Inveneo</name>
+            <autoNotify xmlns="">on</autoNotify>
+            <command xmlns="">javaEmail</command>
+        </target>
+    </path>
+    <path name="Email-Inveneo" initial-delay="0s">
+        <target interval="0m">
+            <name xmlns="">Inveneo</name>
+            <autoNotify xmlns="">on</autoNotify>
+            <command xmlns="">javaEmail</command>
+        </target>
+    </path>
+    <path name="SMS-Inveneo" initial-delay="0s">
+        <target interval="0m">
+            <name xmlns="">Inveneo</name>
+            <autoNotify xmlns="">on</autoNotify>
+            <command xmlns="">frontlinePost</command>
         </target>
     </path>
 </destinationPaths>
