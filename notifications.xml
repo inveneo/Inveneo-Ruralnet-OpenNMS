@@ -2,7 +2,7 @@
 <notifications xmlns="http://xmlns.opennms.org/xsd/notifications">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">1.2</rev>
-        <created xmlns="">Friday, March 18, 2011 10:36:49 PM GMT</created>
+        <created xmlns="">Friday, April 29, 2011 1:09:25 AM GMT</created>
         <mstation xmlns="">localhost</mstation>
     </ns1:header>
     <notification name="interfaceDown" status="off" writeable="yes">
@@ -93,7 +93,103 @@ on node %nodelabel% has been deleted from OpenNMS's polling database.</text-mess
         <description xmlns="">Backbone Node Down-SMSInveneo</description>
         <rule xmlns="">(IPADDR IPLIKE *.*.*.*) &amp;  (!isICMP )</rule>
         <destinationPath xmlns="">SMS-Inveneo</destinationPath>
-        <text-message xmlns="">Haiti OpenNMS: Backbone Node %nodelabel% is down at %time%.</text-message>
+        <text-message xmlns="">Haiti OpenNMS: Backbone Node %nodelabel% (%asset[rack]%) is down at %time%.</text-message>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
+        <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
+        <parameter name="timeout" value="2000"/>
+        <parameter name="retries" value="1"/>
         <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
         <parameter name="timeout" value="2000"/>
         <parameter name="retries" value="1"/>
