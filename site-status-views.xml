@@ -7,14 +7,11 @@
   <views>
     <view name="default" >
       <rows>
-        <row-def label="Routers">
-          <category name="Routers"/>
+        <row-def label="Mikrotik">
+          <category name="Mikrotik"/>
         </row-def>
-        <row-def label="Switches">
-          <category name="Switches"/>
-        </row-def>
-        <row-def label="Servers">
-          <category name="Servers"/>
+        <row-def label="Ubiquiti">
+          <category name="Ubiquiti"/>
         </row-def>
       </rows>
     </view>
