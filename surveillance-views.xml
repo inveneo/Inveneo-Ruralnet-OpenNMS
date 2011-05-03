@@ -5,6 +5,23 @@
   xsi:schemaLocation="http://www.opennms.org/xsd/config/surveillance-views http://www.opennms.org/xsd/config/surveillance-views.xsd"
   default-view="default" >
   <views >
+    <view name="bati" refresh-seconds="300" >
+      <rows>
+        <row-def label="Mikrotik" >
+          <category name="Mikrotik"/>
+        </row-def>
+        <row-def label="Ubiquiti" >
+          <category name="Ubiquiti"/>
+        </row-def>
+      </rows>
+      <columns>
+        <column-def label="Backbone" >
+          <category name="Backbone" />
+        </column-def>
+      </columns>
+    </view>
+
+<!-- default view here -->
     <view name="default" refresh-seconds="300" >
       <rows>
         <row-def label="Mikrotik" >

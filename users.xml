@@ -2,7 +2,7 @@
 <userinfo xmlns="http://xmlns.opennms.org/xsd/users">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">.9</rev>
-        <created xmlns="">Friday, March 18, 2011 10:19:33 PM GMT</created>
+        <created xmlns="">Monday, May 2, 2011 11:43:24 PM GMT</created>
         <mstation xmlns="">master.nmanage.com</mstation>
     </ns1:header>
     <users>
@@ -22,11 +22,101 @@
             <contact type="homePhone" info=""/>
         </user>
         <user read-only="false">
+            <user-id xmlns="">rohan</user-id>
+            <full-name xmlns="">Rohan Mahy</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">4CB9C8A8048FD02294477FCB1A41191A</password>
+            <contact type="email" info="rohan@inveneo.org"/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info="+50938914520"/>
+            <contact type="homePhone" info=""/>
+        </user>
+        <user read-only="false">
             <user-id xmlns="">admin</user-id>
             <full-name xmlns="">Administrator</full-name>
             <user-comments xmlns="">Default administrator, do not delete</user-comments>
             <password xmlns="">040C91FB27A19576A9E3C4AE5DD62C7B</password>
             <contact type="email" info=""/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info=""/>
+            <contact type="homePhone" info=""/>
+        </user>
+        <user read-only="false">
+            <user-id xmlns="">jerry</user-id>
+            <full-name xmlns="">Jerry Joseph</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">4CB9C8A8048FD02294477FCB1A41191A</password>
+            <contact type="email" info="jerusprodux@gmail.com"/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info="+50937162363"/>
+            <contact type="homePhone" info=""/>
+        </user>
+        <user read-only="false">
+            <user-id xmlns="">jen</user-id>
+            <full-name xmlns="">Jen Overgaag</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">36CB59311D1EF5203129E5F6DCF74F0F</password>
+            <contact type="email" info="jen@inveneo.org"/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info="+18054409423"/>
+            <contact type="homePhone" info=""/>
+        </user>
+        <user read-only="false">
+            <user-id xmlns="">mark</user-id>
+            <full-name xmlns="">Mark Summer</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">4CB9C8A8048FD02294477FCB1A41191A</password>
+            <contact type="email" info="mark@inveneo.org"/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info="+14158679751"/>
+            <contact type="homePhone" info=""/>
+        </user>
+        <user read-only="false">
+            <user-id xmlns="">bati</user-id>
+            <full-name xmlns="">Generic Bati</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">801105C1414B3A4187820681ACA75D5C</password>
+            <contact type="email" info=""/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info=""/>
+            <contact type="homePhone" info=""/>
+        </user>
+        <user read-only="false">
+            <user-id xmlns="">sam</user-id>
+            <full-name xmlns="">Sam Perales</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">4CB9C8A8048FD02294477FCB1A41191A</password>
+            <contact type="email" info="sam@inveneo.org"/>
             <contact type="pagerEmail" info=""/>
             <contact type="xmppAddress" info=""/>
             <contact type="microblog" info=""/>

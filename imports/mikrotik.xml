@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-04-08T17:58:17.633-05:00" foreign-source="mikrotik" date-stamp="2011-04-08T17:57:58.750-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-05-02T19:47:58.596-05:00" foreign-source="mikrotik" date-stamp="2011-05-02T19:47:57.028-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="HILRE" foreign-id="1299797626790" building="HILRE">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.12" descr="">
             <monitored-service service-name="StrafePing"/>
@@ -8,6 +8,8 @@
         </interface>
         <category name="Backbone"/>
         <category name="Mikrotik"/>
+        <asset value="10.0.64.12" name="rack"/>
+        <asset value="HILRE" name="building"/>
     </node>
     <node node-label="OBLEO" foreign-id="1299785184963" building="OBLON">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.4" descr="">
@@ -17,6 +19,8 @@
         </interface>
         <category name="Backbone"/>
         <category name="Mikrotik"/>
+        <asset value="10.0.64.4" name="rack"/>
+        <asset value="OBLEO" name="building"/>
     </node>
     <node node-label="BOUTL" foreign-id="1299721753945" building="BOUTL">
         <interface status="1" snmp-primary="P" ip-addr="10.0.2.20" descr="">
@@ -26,5 +30,47 @@
         </interface>
         <category name="Backbone"/>
         <category name="Mikrotik"/>
+        <asset value="10.0.2.20" name="rack"/>
+        <asset value="BOUTL" name="building"/>
+    </node>
+    <node node-label="MASDE" foreign-id="1304383015367">
+        <interface snmp-primary="P" ip-addr="10.0.64.28">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.28" name="rack"/>
+        <asset value="MASDE" name="building"/>
+    </node>
+    <node node-label="PIGNO" foreign-id="1304383265673">
+        <interface snmp-primary="P" ip-addr="10.0.64.36">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.36" name="rack"/>
+        <asset value="PIGNO" name="building"/>
+    </node>
+    <node node-label="HINCH" foreign-id="1304383472648">
+        <interface snmp-primary="P" ip-addr="10.0.64.60">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.60" name="rack"/>
+        <asset value="HINCH" name="building"/>
+    </node>
+    <node node-label="JANVI" foreign-id="1304383667789">
+        <interface snmp-primary="P" ip-addr="10.0.64.52">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.52" name="rack"/>
+        <asset value="JANVI" name="building"/>
     </node>
 </model-import>

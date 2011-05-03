@@ -2,19 +2,24 @@
 <destinationPaths xmlns="http://xmlns.opennms.org/xsd/destinationPaths">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">1.2</rev>
-        <created xmlns="">Friday, March 18, 2011 7:53:50 PM GMT</created>
+        <created xmlns="">Monday, May 2, 2011 9:20:01 PM GMT</created>
         <mstation xmlns="">localhost</mstation>
     </ns1:header>
-    <path name="BackboneNotification" initial-delay="1m">
+    <path name="Email-Critical" initial-delay="1m">
         <target interval="0m">
             <name xmlns="">Inveneo</name>
             <autoNotify xmlns="">on</autoNotify>
             <command xmlns="">javaEmail</command>
         </target>
-    </path>
-    <path name="Email-Inveneo" initial-delay="0s">
         <target interval="0m">
-            <name xmlns="">Inveneo</name>
+            <name xmlns="">backbone_batis</name>
+            <autoNotify xmlns="">on</autoNotify>
+            <command xmlns="">javaEmail</command>
+        </target>
+    </path>
+    <path name="Email-Warn" initial-delay="1m">
+        <target interval="0s">
+            <name xmlns="">andris</name>
             <autoNotify xmlns="">on</autoNotify>
             <command xmlns="">javaEmail</command>
         </target>

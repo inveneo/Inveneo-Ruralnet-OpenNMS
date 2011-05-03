@@ -2,7 +2,7 @@
 <notifications xmlns="http://xmlns.opennms.org/xsd/notifications">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">1.2</rev>
-        <created xmlns="">Friday, April 29, 2011 1:09:25 AM GMT</created>
+        <created xmlns="">Monday, May 2, 2011 11:23:51 PM GMT</created>
         <mstation xmlns="">localhost</mstation>
     </ns1:header>
     <notification name="interfaceDown" status="off" writeable="yes">
@@ -88,7 +88,7 @@ on node %nodelabel% has been deleted from OpenNMS's polling database.</text-mess
         <text-message xmlns="">A Threshold has returned to normal on node: %nodelabel%, interface:%interface%. The parameter %parm[ds]% reached a value of %parm[value]% with a rearm threshold of %parm[rearm]%. This threshold for this alert was %parm[threshold]%.</text-message>
         <subject xmlns="">Notice #%noticeid%: High Threshold Rearmed for %parm[ds]% on node %nodelabel%.</subject>
     </notification>
-    <notification name="Backbone Node Down-SMSInveneo" status="on" writeable="yes">
+    <notification name="Backbone Node Down-SMSInveneo" status="off" writeable="yes">
         <uei xmlns="">uei.opennms.org/nodes/nodeDown</uei>
         <description xmlns="">Backbone Node Down-SMSInveneo</description>
         <rule xmlns="">(IPADDR IPLIKE *.*.*.*) &amp;  (!isICMP )</rule>
@@ -286,5 +286,14 @@ on node %nodelabel% has been deleted from OpenNMS's polling database.</text-mess
         <parameter name="url" value="http://10.0.1.79:8011/send/sms/"/>
         <parameter name="timeout" value="2000"/>
         <parameter name="retries" value="1"/>
+    </notification>
+    <notification name="Backbone Node Down-email alerts" status="on" writeable="yes">
+        <uei xmlns="">uei.opennms.org/nodes/nodeDown</uei>
+        <description xmlns="">Backbone Node Down-email alerts</description>
+        <rule xmlns="">(categoryName = 'Mikrotik')</rule>
+        <destinationPath xmlns="">Email-Critical</destinationPath>
+        <text-message xmlns="">OpenNMS Ruralnet Notice %noticeid%: %nodelabel% (%asset[rack]%) is down at %time%! This is an urgent alert.  Node(s) are down that likely affect a large part of the Rural network</text-message>
+        <subject xmlns="">URGENT Haiti Ruralnet OpenNMS notice #%noticeid%: %nodelabel% (%asset[rack]%) is down!</subject>
+        <numeric-message xmlns="">111-%noticeid%</numeric-message>
     </notification>
 </notifications>
