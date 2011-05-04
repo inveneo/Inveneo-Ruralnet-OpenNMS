@@ -26,4 +26,32 @@
     </uris>
   </http-collection>
   -->
+
+  <http-collection name="ubnthttp">
+    <rrd step="300">
+      <rra>RRA:AVERAGE:0.5:1:8928</rra>
+      <rra>RRA:AVERAGE:0.5:12:8784</rra>
+      <rra>RRA:MIN:0.5:12:8784</rra>
+      <rra>RRA:MAX:0.5:12:8784</rra>
+    </rrd>
+    <uris>
+      <uri name="ubiquiti-status-cgi-json">
+        <url method="POST"
+             path="/login.cgi?uri=/status.cgi"
+             user-agent="OpenNMS 1.8 HttpCollector"
+             response-range="100-399"
+             matches="(?s).*"ccq":\s([0-9]+).*">
+          <parameters>
+            <parameter key="username" value="ubnt" />
+            <parameter key="password" value="n3th0p3-inv" />
+            <parameter key="Submit" value="Login" />
+          </parameters>
+        </url>
+        <attributes>
+          <attrib alias="ubntCcq" match-group="1" type="gauge32"/>
+        </attributes>
+      </uri>
+    </uris>
+  </http-collection>
+
 </http-datacollection-config>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<foreign-source date-stamp="2011-03-10T18:30:02.065-08:00" name="ubiquiti" xmlns="http://xmlns.opennms.org/xsd/config/foreign-source">
+<foreign-source date-stamp="2011-05-03T18:39:31.991-05:00" name="ubiquiti" xmlns="http://xmlns.opennms.org/xsd/config/foreign-source">
     <scan-interval>1d</scan-interval>
     <detectors>
         <detector class="org.opennms.netmgt.provision.detector.icmp.IcmpDetector" name="ICMP"/>

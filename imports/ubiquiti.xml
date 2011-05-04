@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-05-02T19:49:18.272-05:00" foreign-source="ubiquiti" date-stamp="2011-05-02T19:49:16.452-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-05-03T20:05:51.238-05:00" foreign-source="ubiquiti" date-stamp="2011-05-03T20:05:50.470-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="HILRE-HINCH" foreign-id="1299812393220" building="HILRE">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.58" descr=""/>
         <category name="Backbone"/>
@@ -37,6 +37,8 @@
     </node>
     <node node-label="BOUTL-OBLEO" foreign-id="1299721595572" building="BOUTL">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.2" descr="">
+            <monitored-service service-name="HTTP"/>
+            <monitored-service service-name="UbntHttp"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="ICMP"/>
         </interface>
@@ -82,8 +84,8 @@
         <asset value="10.0.64.35" name="rack"/>
         <asset value="Pignon" name="building"/>
     </node>
-    <node node-label="OBLEO-BOUTL" foreign-id="1304382764181">
-        <interface snmp-primary="P" ip-addr="10.0.64.3">
+    <node node-label="OBLEO-BOUTL" foreign-id="1304382764181" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.3" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -92,8 +94,8 @@
         <asset value="10.0.64.3" name="rack"/>
         <asset value="OBLEO" name="building"/>
     </node>
-    <node node-label="MASDE-HILRE" foreign-id="1304383184732">
-        <interface snmp-primary="P" ip-addr="10.0.64.27">
+    <node node-label="MASDE-HILRE" foreign-id="1304383184732" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.27" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -102,8 +104,8 @@
         <asset value="10.0.64.27" name="rack"/>
         <asset value="MASDE" name="building"/>
     </node>
-    <node node-label="HINCH-HILRE" foreign-id="1304383427385">
-        <interface snmp-primary="P" ip-addr="10.0.64.59">
+    <node node-label="HINCH-HILRE" foreign-id="1304383427385" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.59" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -112,8 +114,8 @@
         <asset value="10.0.64.59" name="rack"/>
         <asset value="HINCH" name="building"/>
     </node>
-    <node node-label="HINCH-BAYCT" foreign-id="1304383513553">
-        <interface snmp-primary="P" ip-addr="10.0.64.114">
+    <node node-label="HINCH-BAYCT" foreign-id="1304383513553" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.114" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -122,8 +124,8 @@
         <asset value="10.0.64.114" name="rack"/>
         <asset value="HINCH" name="building"/>
     </node>
-    <node node-label="JANVI-HILRE" foreign-id="1304383602894">
-        <interface snmp-primary="P" ip-addr="10.0.64.51">
+    <node node-label="JANVI-HILRE" foreign-id="1304383602894" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.51" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -132,8 +134,8 @@
         <asset value="10.0.64.51" name="rack"/>
         <asset value="JANVI" name="building"/>
     </node>
-    <node node-label="JANVI-MIBAL" foreign-id="1304383747149">
-        <interface snmp-primary="P" ip-addr="10.0.64.66">
+    <node node-label="JANVI-MIBAL" foreign-id="1304383747149" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.66" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
