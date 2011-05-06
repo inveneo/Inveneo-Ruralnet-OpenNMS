@@ -37,6 +37,7 @@
     <uris>
       <uri name="ubiquiti-status-cgi-json">
         <url method="POST"
+	     http-version="1.0"
              path="/login.cgi"
              user-agent="OpenNMS 1.8 HttpCollector"
              response-range="100-399"
