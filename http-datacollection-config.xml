@@ -37,11 +37,12 @@
     <uris>
       <uri name="ubiquiti-status-cgi-json">
         <url method="POST"
-             path="/login.cgi?uri=/status.cgi"
+             path="/login.cgi"
              user-agent="OpenNMS 1.8 HttpCollector"
              response-range="100-399"
              matches="(?s).*"ccq":\s([0-9]+).*">
           <parameters>
+            <parameter key="uri" value="status.cgi" />
             <parameter key="username" value="ubnt" />
             <parameter key="password" value="n3th0p3-inv" />
             <parameter key="Submit" value="Login" />

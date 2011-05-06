@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-05-03T00:00:00.948-05:00" foreign-source="localhost" date-stamp="2011-05-03T00:00:00.524-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-05-05T00:00:00.361-05:00" foreign-source="localhost" date-stamp="2011-05-05T00:00:00.025-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="localhost." foreign-id="1311886075" building="localhost">
         <interface status="1" snmp-primary="P" managed="true" ip-addr="127.0.0.1" descr="DNS-A">
             <monitored-service service-name="SNMP"/>
