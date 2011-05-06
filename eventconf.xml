@@ -2053,7 +2053,7 @@
      <alarm-data reduction-key="%uei%:%nodeid%:%dpname%:%parm[reportName]%" alarm-type="3" auto-clean="false" />
   </event>
 
-
+<!-- Commenting unused events
   <event-file>events/Rancid.events.xml</event-file>
   <event-file>events/3Com.events.xml</event-file>
   <event-file>events/AdaptecRaid.events.xml</event-file>
@@ -2104,8 +2104,12 @@
   <event-file>events/Cisco.5300dchan.events.xml</event-file>
   <event-file>events/Cisco.mcast.events.xml</event-file>
   <event-file>events/Cisco.SCE.events.xml</event-file>
+-->
+
   <event-file>events/Cisco2.events.xml</event-file>
   <event-file>events/Cisco.events.xml</event-file>
+
+<!-- Commenting unused events
   <event-file>events/Colubris.events.xml</event-file>
   <event-file>events/Concord.events.xml</event-file>
   <event-file>events/Covergence.events.xml</event-file>
@@ -2139,12 +2143,21 @@
   <event-file>events/FujitsuSiemens.events.xml</event-file>
   <event-file>events/GGSN.events.xml</event-file>
   <event-file>events/Groupwise.events.xml</event-file>
+-->
+
+
   <event-file>events/HP.events.xml</event-file>
+
+<!-- Commenting unused events
   <event-file>events/Hyperic.events.xml</event-file>
   <event-file>events/IBM.events.xml</event-file>
   <event-file>events/IBM-UMS.events.xml</event-file>
   <event-file>events/IBMRSA2.events.xml</event-file>
+-->
+
   <event-file>events/IEEE802dot11.events.xml</event-file>
+
+<!-- Commenting unused events
   <event-file>events/Intel.events.xml</event-file>
   <event-file>events/InteractiveIntelligence.events.xml</event-file>
   <event-file>events/IronPort.events.xml</event-file>
@@ -2174,12 +2187,20 @@
   <event-file>events/Netgear.events.xml</event-file>
   <event-file>events/Netscalar.events.xml</event-file>
   <event-file>events/Netscreen.events.xml</event-file>
+-->
+
   <event-file>events/NetSNMP.events.xml</event-file>
+
+<!-- Commenting unused events
   <event-file>events/Nokia.events.xml</event-file>
   <event-file>events/NORTEL.Contivity.events.xml</event-file>
   <event-file>events/Novell.events.xml</event-file>
   <event-file>events/Oracle.events.xml</event-file>
+-->
+
   <event-file>events/OSPF.events.xml</event-file>
+
+<!-- Commenting unused events
   <event-file>events/Overland.events.xml</event-file>
   <event-file>events/Overture.events.xml</event-file>
   <event-file>events/Packeteer.events.xml</event-file>
@@ -2219,6 +2240,8 @@
   <event-file>events/Waverider.3000.events.xml</event-file>
   <event-file>events/Xerox-V2.events.xml</event-file>
   <event-file>events/Xerox.events.xml</event-file>
+-->
+
 
   <event-file>events/Standard.events.xml</event-file>
   <event-file>events/Translator.default.events.xml</event-file>
