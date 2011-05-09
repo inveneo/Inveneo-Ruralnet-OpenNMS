@@ -35,19 +35,12 @@
       <rra>RRA:MAX:0.5:12:8784</rra>
     </rrd>
     <uris>
-      <uri name="ubiquiti-status-cgi-json">
-        <url method="POST"
-	     http-version="1.0"
-             path="/login.cgi"
+      <uri name="UbntHttp">
+        <url method="GET"
              user-agent="OpenNMS 1.8 HttpCollector"
+	     host="localhost/cgi-bin/ubnt_status.cgi?ip=${ipaddr}"
              response-range="100-399"
-             matches="(?s).*"ccq":\s([0-9]+).*">
-          <parameters>
-            <parameter key="uri" value="status.cgi" />
-            <parameter key="username" value="ubnt" />
-            <parameter key="password" value="n3th0p3-inv" />
-            <parameter key="Submit" value="Login" />
-          </parameters>
+             matches=".*"ccq": ([0-9]+).*" >
         </url>
         <attributes>
           <attrib alias="ubntCcq" match-group="1" type="gauge32"/>
