@@ -33,11 +33,16 @@
 			<parameter key="collection" value="jsr160"/>
 			<parameter key="thresholding-enabled" value="true"/>
 		</service>
-      		<service name="UbntHttp" interval="300000" user-defined="false" status="on" >
-        		<parameter key="collection" value="ubnthttp" />
-        		<parameter key="retry" value="1" />
-        		<parameter key="timeout" value="2000" />
-      		</service>
+	</package>
+
+	<package name="ubnt-http-collection">
+	    <filter>IPADDR IPLIKE *.*.*.*</filter>
+	    <include-range begin="1.1.1.1" end="254.254.254.254"/>
+            <service name="UbntHttp" interval="300000" user-defined="false" status="on" >
+                    <parameter key="collection" value="ubnthttp" />
+                    <parameter key="retry" value="1" />
+                    <parameter key="timeout" value="2000" />
+            </service>
 	</package>
 
 	<collector service="SNMP" class-name="org.opennms.netmgt.collectd.SnmpCollector"/>
