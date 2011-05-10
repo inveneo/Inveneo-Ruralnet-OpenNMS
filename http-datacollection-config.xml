@@ -37,9 +37,7 @@
     <uris>
       <uri name="UbntHttp">
         <url method="GET"
-	     http-version="1.0"
              user-agent="OpenNMS 1.8 HttpCollector"
-	     scheme="http://"
 	     host="127.0.0.1"
 	     port="80"
 	     path="/cgi-bin/ubnt_status.cgi"
