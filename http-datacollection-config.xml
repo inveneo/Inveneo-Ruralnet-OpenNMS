@@ -44,7 +44,6 @@
 	     port="80"
 	     path="/cgi-bin/ubnt_status.cgi"
 	     query="ip=${ipaddr}"
-             <!--matches=".*"ccq": ([0-9]+).*" -->
              response-range="100-399" />
         </url>
         <attributes>
