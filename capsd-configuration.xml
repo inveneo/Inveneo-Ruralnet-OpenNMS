@@ -183,7 +183,7 @@
         <property key="type" value="default" />
     </protocol-plugin>
 
-    <protocol-plugin protocol="UbntHttp" class-name="org.opennms.netmgt.capsd.plugins.HttpPlugin" scan="off" user-defined="true">
+    <protocol-plugin protocol="UbntHttp" class-name="org.opennms.netmgt.capsd.plugins.HttpPlugin" scan="off" user-defined="false">
         <property key="port" value="80" />
         <property key="timeout" value="3000" />
         <property key="retry" value="1" />

@@ -37,8 +37,13 @@
     <uris>
       <uri name="UbntHttp">
         <url method="GET"
+	     http-version="1.0"
              user-agent="OpenNMS 1.8 HttpCollector"
-	     host="localhost/cgi-bin/ubnt_status.cgi?ip=${ipaddr}"
+	     scheme="http://"
+	     host="127.0.0.1"
+	     port="80"
+	     path="/cgi-bin/ubnt_status.cgi"
+	     query="ip=${ipaddr}"
              response-range="100-399"
              matches=".*"ccq": ([0-9]+).*" >
         </url>
