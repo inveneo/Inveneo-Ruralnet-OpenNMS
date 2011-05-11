@@ -43,11 +43,18 @@
 	     port="80"
 	     path="/cgi-bin/ubnt_status.cgi"
 	     query="ip=${ipaddr}"
-	     matches="(?s).*ccq.:\s([0-9]+).*"
+	     matches="(?s).*speed.:\s([0-9]+).*signal.:\s([-0-9]+).*noisef.:\s([-0-9]+).*ack.:\s([0-9]+).*ccq.:\s([0-9]+).*txrate.:\s.([\.0-9]+).*rxrate.:\s.([\.0-9]+).*count.:\s([0-9]+).*"
              response-range="100-399" >
         </url>
         <attributes>
-          <attrib alias="ubntCcq" match-group="1" type="gauge32"/>
+	  <attrib alias="ubntLanIfSpeed" match-group="1" type="gauge32"/>
+	  <attrib alias="ubntSignal" match-group="2" type="gauge32"/>
+	  <attrib alias="ubntNoise" match-group="3" type="gauge32"/>
+	  <attrib alias="ubntAck" match-group="4" type="gauge32"/>
+          <attrib alias="ubntCcq" match-group="5" type="gauge32"/>
+          <attrib alias="ubntTxRate" match-group="6" type="gauge32"/>
+          <attrib alias="ubntRxRate" match-group="7" type="gauge32"/>
+          <attrib alias="ubntNumClients" match-group="8" type="gauge32"/>
         </attributes>
       </uri>
     </uris>
