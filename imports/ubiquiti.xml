@@ -1,35 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-05-09T17:33:08.297-05:00" foreign-source="ubiquiti" date-stamp="2011-05-09T17:33:07.709-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-05-11T19:10:10.927-05:00" foreign-source="ubiquiti" date-stamp="2011-05-11T19:10:09.703-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="HILRE-HINCH" foreign-id="1299812393220" building="HILRE">
-        <interface status="1" snmp-primary="P" ip-addr="10.0.64.58" descr=""/>
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.58" descr="">
+            <monitored-service service-name="UbntHttp"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="ICMP"/>
+        </interface>
         <category name="Backbone"/>
         <category name="Ubiquiti"/>
         <asset value="10.0.64.58" name="rack"/>
         <asset value="HILRE" name="building"/>
     </node>
     <node node-label="HILRE-PIGNO" foreign-id="1299812279283" building="HILRE">
-        <interface status="1" snmp-primary="P" ip-addr="10.0.64.34" descr=""/>
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.34" descr="">
+            <monitored-service service-name="UbntHttp"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="ICMP"/>
+        </interface>
         <category name="Backbone"/>
         <category name="Ubiquiti"/>
         <asset value="10.0.64.34" name="rack"/>
         <asset value="HILRE" name="building"/>
     </node>
     <node node-label="HILRE-MASDE" foreign-id="1299812218673" building="HILRE">
-        <interface status="1" snmp-primary="P" ip-addr="10.0.64.26" descr=""/>
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.26" descr="">
+            <monitored-service service-name="UbntHttp"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="ICMP"/>
+        </interface>
         <category name="Backbone"/>
         <category name="Ubiquiti"/>
         <asset value="10.0.64.26" name="rack"/>
         <asset value="HILRE" name="building"/>
     </node>
     <node node-label="OBLEO-BELVU" foreign-id="1299812113648" building="OBLEO">
-        <interface status="1" snmp-primary="P" ip-addr="10.0.64.42" descr=""/>
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.42" descr="">
+            <monitored-service service-name="UbntHttp"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="ICMP"/>
+        </interface>
         <category name="Ubiquiti"/>
         <category name="Backbone"/>
         <asset value="10.0.64.42" name="rack"/>
         <asset value="OBLEO" name="building"/>
     </node>
     <node node-label="OBLEO-HILRE" foreign-id="1299810850213" building="OBLEO">
-        <interface status="1" snmp-primary="P" ip-addr="10.0.64.10" descr=""/>
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.10" descr="">
+            <monitored-service service-name="UbntHttp"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="ICMP"/>
+        </interface>
         <category name="Backbone"/>
         <category name="Ubiquiti"/>
         <asset value="10.0.64.10" name="rack"/>
@@ -55,6 +75,7 @@
     </node>
     <node node-label="HILRE-JANVI" foreign-id="1304113562413" building="">
         <interface snmp-primary="P" ip-addr="10.0.64.50" descr="">
+            <monitored-service service-name="UbntHttp"/>
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -76,6 +97,7 @@
     </node>
     <node node-label="PIGNO-HILRE" foreign-id="1304300519926" building="">
         <interface snmp-primary="P" ip-addr="10.0.64.35" descr="">
+            <monitored-service service-name="UbntHttp"/>
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -97,6 +119,7 @@
     </node>
     <node node-label="MASDE-HILRE" foreign-id="1304383184732" building="">
         <interface snmp-primary="P" ip-addr="10.0.64.27" descr="">
+            <monitored-service service-name="UbntHttp"/>
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -107,6 +130,7 @@
     </node>
     <node node-label="HINCH-HILRE" foreign-id="1304383427385" building="">
         <interface snmp-primary="P" ip-addr="10.0.64.59" descr="">
+            <monitored-service service-name="UbntHttp"/>
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -117,6 +141,7 @@
     </node>
     <node node-label="HINCH-BAYCT" foreign-id="1304383513553" building="">
         <interface snmp-primary="P" ip-addr="10.0.64.114" descr="">
+            <monitored-service service-name="UbntHttp"/>
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -127,6 +152,7 @@
     </node>
     <node node-label="JANVI-HILRE" foreign-id="1304383602894" building="">
         <interface snmp-primary="P" ip-addr="10.0.64.51" descr="">
+            <monitored-service service-name="UbntHttp"/>
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -137,6 +163,7 @@
     </node>
     <node node-label="JANVI-MIBAL" foreign-id="1304383747149" building="">
         <interface snmp-primary="P" ip-addr="10.0.64.66" descr="">
+            <monitored-service service-name="UbntHttp"/>
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
