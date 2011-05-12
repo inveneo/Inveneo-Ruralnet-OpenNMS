@@ -12,7 +12,15 @@
                   <resource-filter field="ifHighSpeed">^[1-9]+[0-9]*$</resource-filter>
                 </expression>
         </group>
-        
+
+        <group name="UbntHttp"
+                rrdRepository = "/var/lib/opennms/rrd/snmp/">
+		<threshold ds-type="node" type="low" ds-name="ubntCcq" 
+	           value="790" rearm="800" trigger="3"
+        	   triggeredUEI="uei.opennms.org/inveneo/ubntHttp-ccq-trigger"
+	           rearmedUEI="uei.opennms.org/company/ubntHttp-ccq-rearm" />
+        </group>
+
         <group name="hrstorage"
         		rrdRepository = "/var/lib/opennms/rrd/snmp/">
         		<expression type="high" expression="hrStorageUsed / hrStorageSize * 100.0" ds-type="hrStorageIndex" ds-label="hrStorageDescr" value="90.0" rearm="75.0" trigger="2">

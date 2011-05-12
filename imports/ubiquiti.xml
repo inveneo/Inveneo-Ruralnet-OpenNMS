@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-05-11T19:10:10.927-05:00" foreign-source="ubiquiti" date-stamp="2011-05-11T19:10:09.703-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-05-11T19:34:25.621-05:00" foreign-source="ubiquiti" date-stamp="2011-05-11T19:34:24.981-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="HILRE-HINCH" foreign-id="1299812393220" building="HILRE">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.58" descr="">
             <monitored-service service-name="UbntHttp"/>
