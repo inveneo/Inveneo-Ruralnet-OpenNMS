@@ -43,4 +43,5 @@
             <name xmlns="">org.opennms.netmgt.notifd.DefaultQueueHandler</name>
         </handler-class>
     </queue>
+    <outage-calendar xmlns="">CARML routing problem</outage-calendar>
 </notifd-configuration>

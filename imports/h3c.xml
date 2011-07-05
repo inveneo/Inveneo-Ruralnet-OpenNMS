@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model-import last-import="2011-07-05T17:43:05.620-05:00" foreign-source="h3c" date-stamp="2011-07-05T17:43:05.182-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+    <node node-label="HILRE-SW" foreign-id="1309905746751" building="HILRE">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.168.2" descr=""/>
+    </node>
+    <node node-label="BOUTL-SW" foreign-id="1309904709136" building="BOUTL">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.2.2" descr=""/>
+    </node>
+</model-import>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-05-02T19:47:58.596-05:00" foreign-source="mikrotik" date-stamp="2011-05-02T19:47:57.028-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-07-04T12:06:48.059-05:00" foreign-source="mikrotik" date-stamp="2011-07-04T12:06:44.054-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="HILRE" foreign-id="1299797626790" building="HILRE">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.12" descr="">
             <monitored-service service-name="StrafePing"/>
@@ -72,5 +72,75 @@
         <category name="Backbone"/>
         <asset value="10.0.64.52" name="rack"/>
         <asset value="JANVI" name="building"/>
+    </node>
+    <node node-label="SODO-MIBAL" foreign-id="1305659117098">
+        <interface snmp-primary="P" ip-addr="10.0.64.75">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.75" name="rack"/>
+        <asset value="Sodo" name="building"/>
+    </node>
+    <node node-label="BOSIO" foreign-id="1309213803884">
+        <interface snmp-primary="P" ip-addr="10.0.64.84">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.84" name="rack"/>
+        <asset value="BOSIO" name="building"/>
+    </node>
+    <node node-label="BAYCT" foreign-id="1309213969413">
+        <interface snmp-primary="P" ip-addr="10.0.64.124">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.124" name="rack"/>
+        <asset value="BAYCT" name="building"/>
+    </node>
+    <node node-label="CARML" foreign-id="1309214350184">
+        <interface snmp-primary="P" ip-addr="10.0.64.140">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.140" name="rack"/>
+        <asset value="CARML" name="building"/>
+    </node>
+    <node node-label="MIBAL" foreign-id="1309214426957">
+        <interface snmp-primary="P" ip-addr="10.0.64.92">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.92" name="rack"/>
+        <asset value="MIBAL" name="building"/>
+    </node>
+    <node node-label="SODO" foreign-id="1309219538538">
+        <interface snmp-primary="P" ip-addr="10.0.64.76">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.76" name="rack"/>
+        <asset value="SODO" name="building"/>
+    </node>
+    <node node-label="HODR" foreign-id="1309799187155">
+        <interface snmp-primary="P" ip-addr="10.0.64.140">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.140" name="rack"/>
+        <asset value="HODR" name="building"/>
     </node>
 </model-import>

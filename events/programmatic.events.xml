@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event>
+        <uei>uei.opennms.org/inveneo/ubntHttp-ccq-trigger</uei>
+        <event-label>User-defined threshold event uei.opennms.org/inveneo/ubntHttp-ccq-trigger</event-label>
+        <descr>Threshold exceeded for %service% datasource %parm[ds]% on interface %interface%, parms: %parm[all]</descr>
+        <logmsg dest="logndisplay">Threshold exceeded for %service% datasource %parm[ds]% on interface %interface%, parms: %parm[all]%</logmsg>
+        <severity>Warning</severity>
+    </event>
+    <event>
+        <uei>uei.opennms.org/inveneo/ubntHttp-ccq-rearm</uei>
+        <event-label>User-defined threshold event uei.opennms.org/inveneo/ubntHttp-ccq-rearm</event-label>
+        <descr>Threshold rearmed for %service% datasource %parm[ds]% on interface %interface%, parms: %parm[all]</descr>
+        <logmsg dest="logndisplay">Threshold rearmed for %service% datasource %parm[ds]% on interface %interface%, parms: %parm[all]%</logmsg>
+        <severity>Warning</severity>
+    </event>
+</events>

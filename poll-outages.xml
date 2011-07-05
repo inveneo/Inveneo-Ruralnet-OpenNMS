@@ -1,4 +1,12 @@
-<?xml version="1.0"?>
-<outages>
+<?xml version="1.0" encoding="UTF-8"?>
+<outages xmlns="http://xmlns.opennms.org/xsd/config/poller/outages">
+    <outage name="CARML routing problem" type="specific">
+        <ns1:time xmlns:ns1="http://xmlns.opennms.org/xsd/types"
+            begins="01-Jul-2011 00:00:00" ends="07-Jul-2011 23:59:59"/>
+        <node id="79"/>
+        <node id="80"/>
+        <node id="71"/>
+        <node id="72"/>
+        <node id="73"/>
+    </outage>
 </outages>
-

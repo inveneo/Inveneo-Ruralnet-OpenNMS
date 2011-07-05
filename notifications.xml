@@ -2,7 +2,7 @@
 <notifications xmlns="http://xmlns.opennms.org/xsd/notifications">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">1.2</rev>
-        <created xmlns="">Monday, May 2, 2011 11:23:51 PM GMT</created>
+        <created xmlns="">Thursday, June 30, 2011 11:06:21 PM GMT</created>
         <mstation xmlns="">localhost</mstation>
     </ns1:header>
     <notification name="interfaceDown" status="off" writeable="yes">
@@ -287,13 +287,42 @@ on node %nodelabel% has been deleted from OpenNMS's polling database.</text-mess
         <parameter name="timeout" value="2000"/>
         <parameter name="retries" value="1"/>
     </notification>
-    <notification name="Backbone Node Down-email alerts" status="on" writeable="yes">
+    <notification name="Backbone Mikrotik Down-email alerts" status="on" writeable="yes">
         <uei xmlns="">uei.opennms.org/nodes/nodeDown</uei>
-        <description xmlns="">Backbone Node Down-email alerts</description>
+        <description xmlns="">Backbone Mikrotik Down-email alerts</description>
         <rule xmlns="">(categoryName = 'Mikrotik')</rule>
         <destinationPath xmlns="">Email-Critical</destinationPath>
-        <text-message xmlns="">OpenNMS Ruralnet Notice %noticeid%: %nodelabel% (%asset[rack]%) is down at %time%! This is an urgent alert.  Node(s) are down that likely affect a large part of the Rural network</text-message>
-        <subject xmlns="">URGENT Haiti Ruralnet OpenNMS notice #%noticeid%: %nodelabel% (%asset[rack]%) is down!</subject>
+        <text-message xmlns="">OpenNMS Ruralnet Notice %noticeid%: Tower %nodelabel% (%asset[rack]%) is down at %time%! This is an urgent alert.  Node(s) are down that likely affect a large part of the Rural network</text-message>
+        <subject xmlns="">URGENT Haiti Ruralnet OpenNMS notice #%noticeid%: Tower %nodelabel% (%asset[rack]%) is down!</subject>
+        <numeric-message xmlns="">111-%noticeid%</numeric-message>
+    </notification>
+    <notification name="Ubiquiti CCQ Low - email alerts" status="on" writeable="yes">
+        <uei xmlns="">uei.opennms.org/inveneo/ubntHttp-ccq-trigger</uei>
+        <description xmlns="">Ubiquiti CCQ Low - email alerts</description>
+        <rule xmlns="">(categoryName = 'Backbone')</rule>
+        <destinationPath xmlns="">Email-Critical</destinationPath>
+        <text-message xmlns="">OpenNMS Ruralnet Notice %noticeid%: %nodelabel% (%asset[rack]%) has low CCQ at %time%!  Low CCQ (below 80%) indicates a poor link and may degrade other clients.  Last measured CCQ is %parm[value]%.</text-message>
+        <subject xmlns="">WARNING Haiti Ruralnet OpenNMS notice #%noticeid%: %nodelabel% (%asset[rack]%) has low CCQ</subject>
+        <numeric-message xmlns="">111-%noticeid%</numeric-message>
+    </notification>
+    <notification name="Ubiquiti CCQ Rearmed - email notice" status="on" writeable="yes">
+        <uei xmlns="">uei.opennms.org/inveneo/ubntHttp-ccq-rearm</uei>
+        <description xmlns="">Ubiquiti CCQ Rearmed - email notice</description>
+        <rule xmlns="">(categoryName = 'Backbone')</rule>
+        <destinationPath xmlns="">Email-Critical</destinationPath>
+        <text-message xmlns="">OpenNMS Ruralnet Notice %noticeid%: %nodelabel% (%asset[rack]%) Good CCQ restored at %time%!  Good CCQ (above 80%) indicates a good link. Performance should be back to normal.  Last measured CCQ is %parm[value]%.</text-message>
+        <subject xmlns="">WARNING CLEARED Haiti Ruralnet OpenNMS notice #%noticeid%: %nodelabel% (%asset[rack]%) has good CCQ</subject>
+        <numeric-message xmlns="">111-%noticeid%</numeric-message>
+    </notification>
+    <notification name="Backbone Sector Down - email alerts" status="on" writeable="yes">
+        <uei xmlns="">uei.opennms.org/nodes/nodeDown</uei>
+        <description xmlns="">Backbone Sector Down - email alerts</description>
+        <rule xmlns="">(categoryName = 'Sector')</rule>
+        <destinationPath xmlns="">Email-Critical</destinationPath>
+        <text-message xmlns="">OpenNMS Ruralnet Notice %noticeid%: Sector %nodelabel% (%asset[rack]%) is down at %time%! This is an urgent alert.  &#xd;
+&#xd;
+A sector is down that likely affects clients.</text-message>
+        <subject xmlns="">OpenNMS Ruralnet Notice %noticeid%: Sector %nodelabel% (%asset[rack]%) is down at %time%!</subject>
         <numeric-message xmlns="">111-%noticeid%</numeric-message>
     </notification>
 </notifications>
