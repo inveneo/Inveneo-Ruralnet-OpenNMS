@@ -2,7 +2,7 @@
 <groupinfo xmlns="http://xmlns.opennms.org/xsd/groups">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">1.3</rev>
-        <created xmlns="">Monday, May 2, 2011 9:11:01 PM GMT</created>
+        <created xmlns="">Wednesday, July 20, 2011 12:47:03 AM GMT</created>
         <mstation xmlns="">dhcp-219.internal.opennms.org</mstation>
     </ns1:header>
     <groups>
@@ -11,6 +11,7 @@
             <comments xmlns="">The administrators</comments>
             <user xmlns="">admin</user>
             <user xmlns="">andris</user>
+            <user xmlns="">rohan</user>
         </group>
         <group>
             <name xmlns="">Remoting Users</name>
@@ -25,6 +26,9 @@
             <user xmlns="">jen</user>
             <user xmlns="">mark</user>
             <user xmlns="">sam</user>
+            <user xmlns="">emmanuella</user>
+            <user xmlns="">jwiggins</user>
+            <user xmlns="">vebazile</user>
         </group>
         <group>
             <name xmlns="">backbone_batis</name>

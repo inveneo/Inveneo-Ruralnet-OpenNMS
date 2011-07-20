@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-07-05T14:23:54.493-05:00" foreign-source="ubiquiti" date-stamp="2011-07-05T14:23:52.985-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-07-15T19:47:43.743-05:00" foreign-source="ubiquiti" date-stamp="2011-07-15T19:47:43.249-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="HILRE-HINCH" foreign-id="1299812393220" building="HILRE">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.58" descr="">
             <monitored-service service-name="UbntHttp"/>
@@ -528,8 +528,8 @@
         <asset value="10.0.112.12" name="rack"/>
         <asset value="SODO" name="building"/>
     </node>
-    <node node-label="HODR-225" foreign-id="1309291103841">
-        <interface snmp-primary="P" ip-addr="10.0.3.16">
+    <node node-label="HODR-225" foreign-id="1309291103841" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.16" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -539,8 +539,8 @@
         <asset value="10.0.3.16" name="rack"/>
         <asset value="HODR" name="building"/>
     </node>
-    <node node-label="HODR-145" foreign-id="1309291357266">
-        <interface snmp-primary="P" ip-addr="10.0.3.15">
+    <node node-label="HODR-145" foreign-id="1309291357266" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.15" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -550,8 +550,8 @@
         <asset value="10.0.3.15" name="rack"/>
         <asset value="HODR" name="building"/>
     </node>
-    <node node-label="STCRX-HODR" foreign-id="1309291413284">
-        <interface snmp-primary="P" ip-addr="10.0.3.37">
+    <node node-label="STCRX-HODR" foreign-id="1309291413284" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.37" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="UbntHttp"/>
@@ -561,8 +561,8 @@
         <asset value="10.0.3.37" name="rack"/>
         <asset value="STCRX" name="building"/>
     </node>
-    <node node-label="STCRX-090" foreign-id="1309291479683">
-        <interface snmp-primary="P" ip-addr="10.0.49.66">
+    <node node-label="STCRX-090" foreign-id="1309291479683" building="">
+        <interface snmp-primary="P" ip-addr="10.0.49.66" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -572,8 +572,8 @@
         <asset value="10.0.49.66" name="rack"/>
         <asset value="STCRX" name="building"/>
     </node>
-    <node node-label="WFPL-HODR" foreign-id="1309291615805">
-        <interface snmp-primary="P" ip-addr="10.0.3.4">
+    <node node-label="WFPL-HODR" foreign-id="1309291615805" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.4" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="UbntHttp"/>
@@ -583,8 +583,8 @@
         <asset value="10.0.3.4" name="rack"/>
         <asset value="WFPL" name="building"/>
     </node>
-    <node node-label="WFPL-270" foreign-id="1309292195673">
-        <interface snmp-primary="P" ip-addr="10.0.3.18">
+    <node node-label="WFPL-270" foreign-id="1309292195673" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.18" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -594,8 +594,8 @@
         <asset value="10.0.3.18" name="rack"/>
         <asset value="WFPL" name="building"/>
     </node>
-    <node node-label="WFPL-090" foreign-id="1309292264294">
-        <interface snmp-primary="P" ip-addr="10.0.3.17">
+    <node node-label="WFPL-090" foreign-id="1309292264294" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.17" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -605,8 +605,8 @@
         <asset value="10.0.3.17" name="rack"/>
         <asset value="WFPL" name="building"/>
     </node>
-    <node node-label="DESAL-10" foreign-id="1309299098713">
-        <interface snmp-primary="P" ip-addr="10.0.208.11">
+    <node node-label="DESAL-010" foreign-id="1309299098713" building="">
+        <interface snmp-primary="P" ip-addr="10.0.208.11" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -615,8 +615,8 @@
         <asset value="10.0.208.11" name="rack"/>
         <asset value="DESAL" name="building"/>
     </node>
-    <node node-label="DESAL-130" foreign-id="1309299194384">
-        <interface snmp-primary="P" ip-addr="10.0.208.12">
+    <node node-label="DESAL-130" foreign-id="1309299194384" building="">
+        <interface snmp-primary="P" ip-addr="10.0.208.12" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -626,8 +626,8 @@
         <asset value="10.0.208.12" name="rack"/>
         <asset value="DESAL" name="building"/>
     </node>
-    <node node-label="DESAL-350" foreign-id="1309301962275">
-        <interface snmp-primary="P" ip-addr="10.0.208.13">
+    <node node-label="DESAL-350" foreign-id="1309301962275" building="">
+        <interface snmp-primary="P" ip-addr="10.0.208.13" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -637,8 +637,8 @@
         <asset value="10.0.208.13" name="rack"/>
         <asset value="DESAL" name="building"/>
     </node>
-    <node node-label="HDC202-065" foreign-id="1309305153135">
-        <interface snmp-primary="P" ip-addr="200.113.193.108">
+    <node node-label="HDC202-065" foreign-id="1309305153135" building="">
+        <interface snmp-primary="P" ip-addr="200.113.193.108" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
         </interface>
@@ -648,8 +648,8 @@
         <asset value="200.113.193.108" name="rack"/>
         <asset value="HDC202" name="building"/>
     </node>
-    <node node-label="CPE-hdc202-stclaire" foreign-id="1309305273556">
-        <interface snmp-primary="P" ip-addr="200.113.193.109">
+    <node node-label="CPE-hdc202-stclaire" foreign-id="1309305273556" building="">
+        <interface snmp-primary="P" ip-addr="200.113.193.109" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="UbntHttp"/>
@@ -659,8 +659,8 @@
         <asset value="200.113.193.109" name="rack"/>
         <asset value="stclaire" name="building"/>
     </node>
-    <node node-label="BAYCT-BELDR" foreign-id="1309562173241">
-        <interface snmp-primary="P" ip-addr="10.0.64.130">
+    <node node-label="BAYCT-BELDR" foreign-id="1309562173241" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.130" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="UbntHttp"/>
@@ -670,30 +670,30 @@
         <asset value="10.0.64.130" name="rack"/>
         <asset value="BAYCT" name="building"/>
     </node>
-    <node node-label="BOUTL-HODR" foreign-id="1309799096102">
-        <interface snmp-primary="P" ip-addr="10.0.64.138">
+    <node node-label="BOUTL-HODR" foreign-id="1309799096102" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.154" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="UbntHttp"/>
         </interface>
         <category name="Ubiquiti"/>
         <category name="Backbone"/>
-        <asset value="10.0.64.138" name="rack"/>
+        <asset value="10.0.64.154" name="rack"/>
         <asset value="BOUTL" name="building"/>
     </node>
-    <node node-label="HODR-BOUTL" foreign-id="1309799153828">
-        <interface snmp-primary="P" ip-addr="10.0.64.139">
+    <node node-label="HODR-BOUTL" foreign-id="1309799153828" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.155" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="UbntHttp"/>
         </interface>
         <category name="Ubiquiti"/>
         <category name="Backbone"/>
-        <asset value="10.0.64.139" name="rack"/>
+        <asset value="10.0.64.155" name="rack"/>
         <asset value="HODR" name="building"/>
     </node>
-    <node node-label="CPE-wfpl-delaneybay" foreign-id="1309892971095">
-        <interface snmp-primary="P" ip-addr="10.0.3.39">
+    <node node-label="CPE-wfpl-delaneybay" foreign-id="1309892971095" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.39" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="UbntHttp"/>
@@ -704,8 +704,417 @@
         <asset value="10.0.3.39" name="rack"/>
         <asset value="WFPL" name="building"/>
     </node>
-    <node node-label="CPE-mibal-fatem" foreign-id="1309893821128">
-        <interface snmp-primary="P" ip-addr="10.240.104.2">
+    <node node-label="CPE-hodr-stcroix" foreign-id="1310082002184" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.37" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="HODR-235" name="floor"/>
+        <asset value="10.0.3.37" name="rack"/>
+        <asset value="HODR" name="building"/>
+    </node>
+    <node node-label="VERET-HILRE" foreign-id="1310163996179" building="">
+        <interface snmp-primary="P" ip-addr="10.0.168.32" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="10.0.168.32" name="rack"/>
+        <asset value="VERET" name="building"/>
+    </node>
+    <node node-label="LESTR-HILRE" foreign-id="1310166155400" building="">
+        <interface snmp-primary="P" ip-addr="10.0.168.124" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="10.0.168.124" name="rack"/>
+        <asset value="LESTR" name="building"/>
+    </node>
+    <node node-label="LESTR-DESAL" foreign-id="1310166606758" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.98" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.98" name="rack"/>
+        <asset value="LESTR" name="building"/>
+    </node>
+    <node node-label="DESAL-LESTR" foreign-id="1310166749117" building="">
+        <interface snmp-primary="P" ip-addr="10.0.64.100" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.100" name="rack"/>
+        <asset value="DESAL" name="building"/>
+    </node>
+    <node node-label="VERET-050" foreign-id="1310167367929" building="">
+        <interface snmp-primary="P" ip-addr="10.0.176.11" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Sector"/>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="10.0.176.11" name="rack"/>
+        <asset value="VERET" name="building"/>
+    </node>
+    <node node-label="VERET-140" foreign-id="1310167433489" building="">
+        <interface snmp-primary="P" ip-addr="10.0.176.12" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Sector"/>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="10.0.176.12" name="rack"/>
+        <asset value="VERET" name="building"/>
+    </node>
+    <node node-label="VERET-320" foreign-id="1310167478080" building="">
+        <interface snmp-primary="P" ip-addr="10.0.176.13" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Sector"/>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="10.0.176.13" name="rack"/>
+        <asset value="VERET" name="building"/>
+    </node>
+    <node node-label="CPE-stcrx-claudynet" foreign-id="1310169067236" building="">
+        <interface snmp-primary="P" ip-addr="10.0.49.91" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="STCRX-090" name="floor"/>
+        <asset value="10.0.49.91" name="rack"/>
+        <asset value="STCRX" name="building"/>
+    </node>
+    <node node-label="CPE-stcrx-magepasa" foreign-id="1310169340261" building="">
+        <interface snmp-primary="P" ip-addr="10.0.49.93" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="STCRX-090" name="floor"/>
+        <asset value="10.0.49.93" name="rack"/>
+        <asset value="STCRX" name="building"/>
+    </node>
+    <node node-label="CPE-stcrx-schihop" foreign-id="1310169655415" building="">
+        <interface snmp-primary="P" ip-addr="10.0.49.94" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="STCRX-090" name="floor"/>
+        <asset value="10.0.49.94" name="rack"/>
+        <asset value="STCRX" name="building"/>
+    </node>
+    <node node-label="CPE-stcrx-fonkozenew" foreign-id="1310169826525" building="">
+        <interface snmp-primary="P" ip-addr="10.0.49.90" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="STCRX-090" name="floor"/>
+        <asset value="10.0.49.90" name="rack"/>
+        <asset value="STCRX" name="building"/>
+    </node>
+    <node node-label="CPE-stcrx-anacaona" foreign-id="1310170073282" building="">
+        <interface snmp-primary="P" ip-addr="10.0.49.89" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="STCRX-090" name="floor"/>
+        <asset value="10.0.49.89" name="rack"/>
+        <asset value="STCRX" name="building"/>
+    </node>
+    <node node-label="CPE-hodr-crc" foreign-id="1310170420275" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.31" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="HODR-145" name="floor"/>
+        <asset value="10.0.3.31" name="rack"/>
+        <asset value="HODR" name="building"/>
+    </node>
+    <node node-label="CPE-hodr-ifrcres1" foreign-id="1310170479729" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.35" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="HODR-145" name="floor"/>
+        <asset value="10.0.3.43" name="rack"/>
+        <asset value="HODR" name="building"/>
+    </node>
+    <node node-label="CPE-hodr-cordaid" foreign-id="1310171017777" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.43" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="HODR-145" name="floor"/>
+        <asset value="10.0.3.43" name="rack"/>
+        <asset value="HODR" name="building"/>
+    </node>
+    <node node-label="CPE-hodr-notredame" foreign-id="1310171077047" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.36" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="HODR-145" name="floor"/>
+        <asset value="10.0.3.36" name="rack"/>
+        <asset value="HODR" name="building"/>
+    </node>
+    <node node-label="CPE-hodr-spanishrc" foreign-id="1310171138372" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.47" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="HODR-145" name="floor"/>
+        <asset value="10.0.3.47" name="rack"/>
+        <asset value="HODR" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-delaney" foreign-id="1310171392169" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.39" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-270" name="floor"/>
+        <asset value="10.0.3.39" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-ifrcrose" foreign-id="1310171679761" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.50" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-270" name="floor"/>
+        <asset value="10.0.3.50" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-germanrc2" foreign-id="1310171767772" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.30" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-270" name="floor"/>
+        <asset value="10.0.3.30" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-crwcr" foreign-id="1310172030317" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.57" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-270" name="floor"/>
+        <asset value="10.0.3.57" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-habitat" foreign-id="1310172103646" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.56" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-270" name="floor"/>
+        <asset value="10.0.3.56" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-carechatulay" foreign-id="1310172183829" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.40" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="Ubiquiti"/>
+        <asset value="10.0.3.40" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-ednet" foreign-id="1310172368607" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.49" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.0.3.49" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-germnanrc1" foreign-id="1310172549549" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.48" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.0.3.48" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-ppm" foreign-id="1310172996336" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.53" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.0.3.53" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-sanatorium" foreign-id="1310173070767" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.58" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.0.3.58" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-msfchatuley" foreign-id="1310173409513" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.55" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.0.3.55" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-oxfamqbc" foreign-id="1310173495241" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.52" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="Ubiquiti"/>
+        <asset value="10.0.3.52" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-steelement" foreign-id="1310173563502" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.112" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.0.3.112" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-unocha" foreign-id="1310173630624" building="">
+        <interface snmp-primary="P" ip-addr="10.0.3.42" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.0.3.42" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-masde-save" foreign-id="1310173689356" building="">
+        <interface snmp-primary="P" ip-addr="10.0.72.20" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="MASDE-070" name="floor"/>
+        <asset value="10.0.72.20" name="rack"/>
+        <asset value="MASDE" name="building"/>
+    </node>
+    <node node-label="CPE-pigno-htoutreach" foreign-id="1310173775537" building="">
+        <interface snmp-primary="P" ip-addr="10.0.56.20" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="PIGNO-200" name="floor"/>
+        <asset value="10.0.56.20" name="rack"/>
+        <asset value="PIGNO" name="building"/>
+    </node>
+    <node node-label="CPE-bcare-fonkoze" foreign-id="1310173883547" building="">
+        <interface snmp-primary="P" ip-addr="10.0.136.20" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="BCARE-100" name="floor"/>
+        <asset value="10.0.136.20" name="rack"/>
+        <asset value="BCARE" name="building"/>
+    </node>
+    <node node-label="CPE-mibal-fatem" foreign-id="1310173982510" building="">
+        <interface snmp-primary="P" ip-addr="10.240.104.2" descr="">
             <monitored-service service-name="ICMP"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="UbntHttp"/>
@@ -714,6 +1123,30 @@
         <category name="Ubiquiti"/>
         <asset value="MIBAL-290" name="floor"/>
         <asset value="10.240.104.2" name="rack"/>
-        <asset value="FATEM," name="building"/>
+        <asset value="MIBAL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-littlesisters" foreign-id="1310174040684" building="">
+        <interface snmp-primary="P" ip-addr="10.32.33.4" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.32.33.4" name="rack"/>
+        <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="CPE-wfpl-swissrc" foreign-id="1310174103016" building="">
+        <interface snmp-primary="P" ip-addr="10.32.33.3" descr="">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="CPE"/>
+        <category name="Ubiquiti"/>
+        <asset value="WFPL-090" name="floor"/>
+        <asset value="10.32.33.3" name="rack"/>
+        <asset value="WFPL" name="building"/>
     </node>
 </model-import>

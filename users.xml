@@ -2,7 +2,7 @@
 <userinfo xmlns="http://xmlns.opennms.org/xsd/users">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">.9</rev>
-        <created xmlns="">Friday, July 1, 2011 10:06:19 PM GMT</created>
+        <created xmlns="">Tuesday, July 19, 2011 7:38:07 PM GMT</created>
         <mstation xmlns="">master.nmanage.com</mstation>
     </ns1:header>
     <users>
@@ -70,7 +70,7 @@
             <user-id xmlns="">rohan</user-id>
             <full-name xmlns="">Rohan Mahy</full-name>
             <user-comments xmlns=""></user-comments>
-            <password xmlns="">4CB9C8A8048FD02294477FCB1A41191A</password>
+            <password xmlns="">36D891666EF1F2F9905ED26886854593</password>
             <contact type="email" info="rohan@inveneo.org"/>
             <contact type="pagerEmail" info=""/>
             <contact type="xmppAddress" info=""/>
@@ -124,6 +124,21 @@
             <contact type="textPage" info="" serviceProvider=""/>
             <contact type="workPhone" info=""/>
             <contact type="mobilePhone" info="+14158679751"/>
+            <contact type="homePhone" info=""/>
+        </user>
+        <user read-only="false">
+            <user-id xmlns="">vebazile</user-id>
+            <full-name xmlns="">Edouard Bazile</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">E7B12D46ED931DACA44C5E7E3EFF07F1</password>
+            <contact type="email" info="vebazile@inveneo.org"/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info=""/>
             <contact type="homePhone" info=""/>
         </user>
         <user read-only="false">
