@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-07-14T15:58:45.289-05:00" foreign-source="mikrotik" date-stamp="2011-07-14T15:56:51.406-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-07-24T21:12:37.740-05:00" foreign-source="mikrotik" date-stamp="2011-07-24T21:12:37.176-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="HILRE" foreign-id="1299797626790" building="HILRE">
-        <interface status="1" snmp-primary="P" ip-addr="10.0.64.12" descr="">
+        <interface status="1" snmp-primary="P" ip-addr="10.0.64.49" descr="">
             <monitored-service service-name="StrafePing"/>
             <monitored-service service-name="SNMP"/>
             <monitored-service service-name="ICMP"/>
         </interface>
         <category name="Backbone"/>
         <category name="Mikrotik"/>
-        <asset value="10.0.64.12" name="rack"/>
+        <asset value="10.0.64.49" name="rack"/>
         <asset value="HILRE" name="building"/>
     </node>
     <node node-label="OBLEO" foreign-id="1299785184963" building="OBLON">
@@ -163,9 +163,24 @@
         <asset value="10.0.64.100" name="rack"/>
         <asset value="DESAL" name="building"/>
     </node>
-    <node node-label="CPE-wfpl-german2" foreign-id="1310172499373" building="">
+    <node node-label="PSOND" foreign-id="1311299572562">
+        <interface snmp-primary="P" ip-addr="10.0.168.21">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
         <category name="Mikrotik"/>
-        <asset value="W" name="rack"/>
-        <asset value="" name="building"/>
+        <category name="Backbone"/>
+        <asset value="10.0.168.21" name="rack"/>
+        <asset value="PSOND" name="building"/>
+    </node>
+    <node node-label="CBRIT" foreign-id="1311299572563">
+        <interface snmp-primary="P" ip-addr="10.0.64.148">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+        </interface>
+        <category name="Mikrotik"/>
+        <category name="Backbone"/>
+        <asset value="10.0.64.148" name="rack"/>
+        <asset value="CBRIT" name="building"/>
     </node>
 </model-import>

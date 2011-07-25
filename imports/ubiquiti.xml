@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model-import last-import="2011-07-15T19:47:43.743-05:00" foreign-source="ubiquiti" date-stamp="2011-07-15T19:47:43.249-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
+<model-import last-import="2011-07-21T20:54:45.806-05:00" foreign-source="ubiquiti" date-stamp="2011-07-21T20:54:43.889-05:00" xmlns="http://xmlns.opennms.org/xsd/config/model-import">
     <node node-label="HILRE-HINCH" foreign-id="1299812393220" building="HILRE">
         <interface status="1" snmp-primary="P" ip-addr="10.0.64.58" descr="">
             <monitored-service service-name="UbntHttp"/>
@@ -1148,5 +1148,16 @@
         <asset value="WFPL-090" name="floor"/>
         <asset value="10.32.33.3" name="rack"/>
         <asset value="WFPL" name="building"/>
+    </node>
+    <node node-label="PSOND-HILRE" foreign-id="1311299672544">
+        <interface snmp-primary="P" ip-addr="10.0.168.20">
+            <monitored-service service-name="ICMP"/>
+            <monitored-service service-name="SNMP"/>
+            <monitored-service service-name="UbntHttp"/>
+        </interface>
+        <category name="Ubiquiti"/>
+        <category name="Backbone"/>
+        <asset value="10.0.168.20" name="rack"/>
+        <asset value="PSOND" name="building"/>
     </node>
 </model-import>
