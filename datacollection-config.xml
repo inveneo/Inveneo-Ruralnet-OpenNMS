@@ -680,6 +680,10 @@
        <mibObj oid=".1.3.6.1.4.1.2021.13.16.4.1.2" instance="lmVoltIndex" alias="lms-voltdevice" type="string"/>
        <mibObj oid=".1.3.6.1.4.1.2021.13.16.4.1.3" instance="lmVoltIndex" alias="lms-volt" type="gauge32"/>
      </group>
+
+      <group name="mib2-system" ifType="ignore">
+        <mibObj oid=".1.3.6.1.2.1.1.3.0" instance="0" alias="mib2SystemUptime"    type="timeticks" />
+      </group>
       <!-- END Inveneo object group additions -->
 
 
@@ -4478,12 +4482,9 @@
         <sysoidMask>.1.3.6.1.4.1.10002.</sysoidMask>
         <collect>
           <includeGroup>mib2-interfaces</includeGroup>
-          <!--<includeGroup>mib2-system-minimal</includeGroup> -->
+	  <includeGroup>mib2-system</includeGroup>
           <includeGroup>mtxrWlStatIndex</includeGroup>
-          <!--includeGroup>mtxrWlRtabAddr</includeGroup -->
           <includeGroup>dot11smt</includeGroup>
-          <!-- This doesnt supply anything helpful
-          <includeGroup>dot11mac</includeGroup> -->
           <includeGroup>dot11macCount</includeGroup>
           <includeGroup>dot11res</includeGroup>
           <includeGroup>dot11phy</includeGroup>
@@ -4498,6 +4499,7 @@
           <includeGroup>mtxrWlRtabAddr</includeGroup>
           <includeGroup>mtxrHealth</includeGroup>
           <includeGroup>mib2-interfaces</includeGroup>
+	  <includeGroup>mib2-system</includeGroup>
           <!-- <includeGroup>mib2-X-interfaces</includeGroup> -->
           <includeGroup>mib2-host-resources-storage</includeGroup>
           <includeGroup>mib2-host-resources-system</includeGroup>
@@ -4506,6 +4508,30 @@
           <includeGroup>mib2-tcp</includeGroup>
           <includeGroup>mib2-icmp</includeGroup>
           <includeGroup>mib2-powerethernet</includeGroup>
+        </collect>
+      </systemDef>
+
+      <!-- systemDef added by Inveneo for localhost -->
+      <systemDef name="Inveneo">
+        <sysoidMask>.1.3.6.1.4.1.34319.</sysoidMask>
+        <collect>
+          <includeGroup>mib2-host-resources-system</includeGroup>
+          <includeGroup>mib2-host-resources-memory</includeGroup>
+          <includeGroup>mib2-X-interfaces</includeGroup>
+          <includeGroup>net-snmp-disk</includeGroup>
+          <includeGroup>openmanage-coolingdevices</includeGroup>
+          <includeGroup>openmanage-temperatureprobe</includeGroup>
+          <includeGroup>openmanage-powerusage</includeGroup>
+          <includeGroup>ucd-loadavg</includeGroup>
+          <includeGroup>ucd-memory</includeGroup>
+          <includeGroup>ucd-sysstat</includeGroup>
+          <includeGroup>ucd-sysstat-raw</includeGroup>
+          <includeGroup>ucd-sysstat-raw-more</includeGroup>
+          <includeGroup>lmsensors-temp</includeGroup>
+          <includeGroup>lmsensors-fan</includeGroup>
+          <includeGroup>lmsensors-volt</includeGroup>
+          <includeGroup>mib2-host-resources-processor</includeGroup>
+          <includeGroup>mib2-host-resources-storage</includeGroup>
         </collect>
       </systemDef>
 
