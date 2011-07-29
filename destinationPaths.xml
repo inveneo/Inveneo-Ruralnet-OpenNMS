@@ -2,7 +2,7 @@
 <destinationPaths xmlns="http://xmlns.opennms.org/xsd/destinationPaths">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">1.2</rev>
-        <created xmlns="">Monday, July 18, 2011 7:20:35 PM GMT</created>
+        <created xmlns="">Friday, July 29, 2011 5:45:52 PM GMT</created>
         <mstation xmlns="">localhost</mstation>
     </ns1:header>
     <path name="Email-Critical" initial-delay="1m">
@@ -11,10 +11,17 @@
             <autoNotify xmlns="">on</autoNotify>
             <command xmlns="">javaEmail</command>
         </target>
+        <escalate delay="30m">
+            <target interval="0s">
+                <name xmlns="">haiti-support@tickets.inveneo.org</name>
+                <autoNotify xmlns="">off</autoNotify>
+                <command xmlns="">email</command>
+            </target>
+        </escalate>
     </path>
     <path name="Email-Warn" initial-delay="1m">
-        <target interval="0s">
-            <name xmlns="">andris</name>
+        <target interval="1m">
+            <name xmlns="">Inveneo</name>
             <autoNotify xmlns="">on</autoNotify>
             <command xmlns="">javaEmail</command>
         </target>

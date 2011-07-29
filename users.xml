@@ -2,11 +2,11 @@
 <userinfo xmlns="http://xmlns.opennms.org/xsd/users">
     <ns1:header xmlns:ns1="http://xmlns.opennms.org/xsd/types">
         <rev xmlns="">.9</rev>
-        <created xmlns="">Tuesday, July 19, 2011 7:38:07 PM GMT</created>
+        <created xmlns="">Friday, July 29, 2011 6:13:11 PM GMT</created>
         <mstation xmlns="">master.nmanage.com</mstation>
     </ns1:header>
     <users>
-        <user read-only="false">
+        <user read-only="true">
             <user-id xmlns="">emmanuella</user-id>
             <full-name xmlns="">Emmanuella Stimphat</full-name>
             <user-comments xmlns=""></user-comments>
@@ -18,7 +18,7 @@
             <contact type="numericPage" info="" serviceProvider=""/>
             <contact type="textPage" info="" serviceProvider=""/>
             <contact type="workPhone" info=""/>
-            <contact type="mobilePhone" info="+509 3761 7154"/>
+            <contact type="mobilePhone" info="+50937617154"/>
             <contact type="homePhone" info=""/>
         </user>
         <user read-only="false">
@@ -111,6 +111,21 @@
             <contact type="mobilePhone" info="+50937162363"/>
             <contact type="homePhone" info=""/>
         </user>
+        <user read-only="true">
+            <user-id xmlns="">sybille</user-id>
+            <full-name xmlns="">Sybille Fleischmann</full-name>
+            <user-comments xmlns=""></user-comments>
+            <password xmlns="">AAD7AD871F320E8A3E3E62853A1FC7DF</password>
+            <contact type="email" info="sybille@inveneo.org"/>
+            <contact type="pagerEmail" info=""/>
+            <contact type="xmppAddress" info=""/>
+            <contact type="microblog" info=""/>
+            <contact type="numericPage" info="" serviceProvider=""/>
+            <contact type="textPage" info="" serviceProvider=""/>
+            <contact type="workPhone" info=""/>
+            <contact type="mobilePhone" info="+50937617353"/>
+            <contact type="homePhone" info=""/>
+        </user>
         <user read-only="false">
             <user-id xmlns="">mark</user-id>
             <full-name xmlns="">Mark Summer</full-name>
@@ -126,7 +141,7 @@
             <contact type="mobilePhone" info="+14158679751"/>
             <contact type="homePhone" info=""/>
         </user>
-        <user read-only="false">
+        <user read-only="true">
             <user-id xmlns="">vebazile</user-id>
             <full-name xmlns="">Edouard Bazile</full-name>
             <user-comments xmlns=""></user-comments>

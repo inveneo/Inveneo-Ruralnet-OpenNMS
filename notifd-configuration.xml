@@ -43,5 +43,4 @@
             <name xmlns="">org.opennms.netmgt.notifd.DefaultQueueHandler</name>
         </handler-class>
     </queue>
-    <outage-calendar xmlns="">BOSIO ans SODO sectors</outage-calendar>
 </notifd-configuration>

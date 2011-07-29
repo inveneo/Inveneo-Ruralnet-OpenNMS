@@ -5,9 +5,9 @@
 		<view-name>WebConsoleView</view-name>
 		<section>
 			<section-name><![CDATA[Categories]]></section-name>
-			<category><![CDATA[Ubiquiti]]></category>
-			<category><![CDATA[Mikrotik]]></category>
 			<category><![CDATA[Backbone]]></category>
+                        <category><![CDATA[Distribution]]></category>
+                        <category><![CDATA[Customer]]></category>
 		</section>
 	</view>
 </viewinfo>

@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<outages xmlns="http://xmlns.opennms.org/xsd/config/poller/outages">
-    <outage name="BOSIO ans SODO sectors" type="specific">
-        <ns1:time xmlns:ns1="http://xmlns.opennms.org/xsd/types"
-            begins="14-Jul-2011 00:00:00" ends="18-Jul-2011 23:59:59"/>
-        <ns2:time xmlns:ns2="http://xmlns.opennms.org/xsd/types"
-            begins="20-Jul-2011 00:00:00" ends="27-Jul-2011 23:59:59"/>
-        <node id="71"/>
-        <node id="72"/>
-        <node id="73"/>
-        <node id="79"/>
-        <node id="80"/>
-    </outage>
-</outages>
+<outages xmlns="http://xmlns.opennms.org/xsd/config/poller/outages"/>

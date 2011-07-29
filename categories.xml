@@ -13,7 +13,7 @@
         <categories>
             <category>
                 <label><![CDATA[Ubiquiti]]></label>
-                <comment>Ping test of gateways for all ISPs</comment>
+                <comment>Ping test of all Ubiquiti Devices</comment>
                 <normal>99.99</normal>
                 <warning>97</warning>
                 <service>ICMP</service>
@@ -21,7 +21,7 @@
             </category>
             <category>
                 <label><![CDATA[Mikrotik]]></label>
-                <comment>Ping test of gateways for all ISPs</comment>
+                <comment>Ping test of all Mikrotik Devices</comment>
                 <normal>99.99</normal>
                 <warning>97</warning>
                 <service>ICMP</service>
@@ -29,11 +29,27 @@
             </category>
             <category>
                 <label><![CDATA[Backbone]]></label>
-                <comment>Ping test of gateways for all ISPs</comment>
+                <comment>Ping test of all Backbone Nodes</comment>
                 <normal>99.99</normal>
                 <warning>97</warning>
                 <service>ICMP</service>
                 <rule><![CDATA[categoryName == 'Backbone']]></rule>
+            </category>
+            <category>
+                <label><![CDATA[Distribution]]></label>
+                <comment>Ping test of all Distribution Nodes</comment>
+                <normal>99.99</normal>
+                <warning>97</warning>
+                <service>ICMP</service>
+                <rule><![CDATA[categoryName == 'Sector']]></rule>
+            </category>
+            <category>
+                <label><![CDATA[Customer]]></label>
+                <comment>Ping test of all Customer/CPE Nodes</comment>
+                <normal>99.99</normal>
+                <warning>97</warning>
+                <service>ICMP</service>
+                <rule><![CDATA[categoryName == 'CPE']]></rule>
             </category>
         </categories>
     </categorygroup>
